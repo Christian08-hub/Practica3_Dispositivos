@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="249.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.MusicaController">
+   <children>
+      <ImageView fitHeight="250.0" fitWidth="472.0" layoutX="-2.0" layoutY="-1.0">
+         <image>
+            <Image url="@../imagenes/aqua.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="14.0" text="Reproducir Música" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="77.0" text="Nombre de la canción" />
+      <Label layoutX="70.0" layoutY="117.0" text="Reproducir en" />
+      <Button fx:id="btnreproducir" layoutX="136.0" layoutY="195.0" mnemonicParsing="false" onAction="#reproducir" prefHeight="37.0" prefWidth="96.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Reproducir" textFill="WHITE" />
+      <Button fx:id="btncancelar" layoutX="250.0" layoutY="195.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Cancelar" textFill="WHITE" />
+      <RadioButton fx:id="btnauriculares" layoutX="157.0" layoutY="117.0" mnemonicParsing="false" onAction="#auriculares" text="Auriculares" />
+      <RadioButton fx:id="btnparlantes" layoutX="157.0" layoutY="149.0" mnemonicParsing="false" onAction="#parlantes" text="Autoparlantes" />
+      <TextField fx:id="btnnombre" layoutX="157.0" layoutY="73.0" onAction="#nombre" prefHeight="25.0" prefWidth="266.0" style="-fx-background-radius: 20;" />
+      <AnchorPane layoutX="14.0" layoutY="47.0" prefHeight="4.0" prefWidth="432.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>

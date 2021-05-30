@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.Crear_dispositivoController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="585.0">
+         <image>
+            <Image url="@../imagenes/aqua.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnguardar" layoutX="171.0" layoutY="340.0" mnemonicParsing="false" onAction="#guardar" prefHeight="46.0" prefWidth="110.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Guardar" textFill="WHITE" />
+      <Button fx:id="btncancelar" layoutX="298.0" layoutY="340.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="46.0" prefWidth="104.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Cancelar" textFill="WHITE" />
+      <AnchorPane layoutX="72.0" layoutY="59.0" prefHeight="276.0" prefWidth="451.0">
+         <children>
+            <TextField fx:id="btncorreo" layoutX="140.0" layoutY="69.0" onAction="#correo" prefHeight="26.0" prefWidth="256.0" promptText="example@gmail.com" />
+            <TextField fx:id="btnnombre" layoutX="140.0" layoutY="122.0" onAction="#nombre" prefHeight="26.0" prefWidth="256.0" />
+            <CheckBox fx:id="btnvisible" layoutX="115.0" layoutY="163.0" mnemonicParsing="false" onAction="#visible" text="Visible" />
+            <CheckBox fx:id="btnencendido" layoutX="115.0" layoutY="194.0" mnemonicParsing="false" onAction="#encendido" text="Encendido" />
+            <MenuButton fx:id="btndispositivo" layoutX="243.0" layoutY="14.0" mnemonicParsing="false" onAction="#dispositivo" prefHeight="26.0" prefWidth="190.0" text="Dispositivos">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Computadora portátil" />
+                <MenuItem mnemonicParsing="false" text="Tablet" />
+                  <MenuItem mnemonicParsing="false" text="Smartwatch" />
+                  <MenuItem mnemonicParsing="false" text="Smartphone" />
+                  <MenuItem mnemonicParsing="false" text="Auriculares inalámbricos" />
+              </items>
+            </MenuButton>
+            <Label layoutX="14.0" layoutY="73.0" text="Correo electrónico" />
+            <Label layoutX="-13.0" layoutY="126.0" text="Nombre de dispositivo" />
+            <Label layoutX="14.0" layoutY="239.0" text="Número telefónico" />
+            <Label layoutY="18.0" text="Seleccione dispositivo que desea crear" />
+            <TextField fx:id="btnnumero" layoutX="140.0" layoutY="236.0" onAction="#numero" prefHeight="26.0" prefWidth="256.0" promptText="+502" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="44.0" layoutY="21.0" prefHeight="26.0" prefWidth="182.0" text="Crear Dispositivo" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="44.0" layoutY="58.0" prefHeight="5.0" prefWidth="498.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>

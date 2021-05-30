@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="368.0" prefWidth="547.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="Controlador.MensajesController">
+   <children>
+      <ImageView fitHeight="376.0" fitWidth="563.0" layoutX="-9.0">
+         <image>
+            <Image url="@../imagenes/aqua.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="22.0" layoutY="23.0" text="Mensajes" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="21.0" />
+         </font>
+      </Label>
+      <TableView layoutX="32.0" layoutY="69.0" prefHeight="293.0" prefWidth="490.0">
+        <columns>
+          <TableColumn prefWidth="237.0" text="Tipo de Mensaje" />
+          <TableColumn prefWidth="252.0" text="Mensaje" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="23.0" layoutY="56.0" prefHeight="4.0" prefWidth="499.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>

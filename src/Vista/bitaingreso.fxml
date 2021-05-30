@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="Controlador.BitaingresoController">
+   <children>
+      <ImageView fitHeight="508.0" fitWidth="732.0" layoutX="-13.0">
+         <image>
+            <Image url="@../imagenes/aqua.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="29.0" layoutY="27.0" text="Bitácora de ingreso al sistema" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="85.0" text="Fecha de inicio" />
+      <Label layoutX="369.0" layoutY="85.0" text="Fecha de fin" />
+      <Label layoutX="10.0" layoutY="124.0" prefHeight="17.0" prefWidth="103.0" text="Seleccione usuario" />
+      <Label layoutX="27.0" layoutY="163.0" text="Fecha de generación:" />
+      <Label layoutX="448.0" layoutY="163.0" text="Hora de generación:" />
+      <Button fx:id="btnexportar" layoutX="556.0" layoutY="32.0" mnemonicParsing="false" onAction="#exportar" prefHeight="34.0" prefWidth="126.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Exportar reporte" textFill="WHITE" />
+      <DatePicker layoutX="114.0" layoutY="81.0" prefHeight="25.0" prefWidth="234.0" />
+      <DatePicker layoutX="448.0" layoutY="81.0" prefHeight="25.0" prefWidth="234.0" />
+      <MenuButton layoutX="114.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="567.0" style="-fx-background-radius: 20;" text="Seleccione correo electrónico">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Seleccione correo electrónico" />
+        </items>
+      </MenuButton>
+      <TableView layoutX="29.0" layoutY="186.0" prefHeight="305.0" prefWidth="658.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="No. de Línea" />
+          <TableColumn prefWidth="312.0" text="Correo electrónico" />
+            <TableColumn prefWidth="144.0" text="Fecha de ingreso" />
+            <TableColumn prefWidth="126.0" text="Hora de ingreso" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="27.0" layoutY="62.0" prefHeight="6.0" prefWidth="355.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>

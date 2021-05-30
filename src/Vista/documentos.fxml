@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="574.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.DocumentosController">
+   <children>
+      <ImageView fitHeight="372.0" fitWidth="583.0" layoutX="-9.0">
+         <image>
+            <Image url="@../imagenes/aqua.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="24.0" layoutY="14.0" text="Recibir Documentos" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="21.0" />
+         </font>
+      </Label>
+      <TableView layoutX="24.0" layoutY="66.0" prefHeight="289.0" prefWidth="529.0">
+        <columns>
+          <TableColumn prefWidth="222.0" text="Nombre documento" />
+          <TableColumn minWidth="0.0" prefWidth="306.0" text="Dispositivo remitente" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="24.0" layoutY="44.0" prefHeight="4.0" prefWidth="523.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>

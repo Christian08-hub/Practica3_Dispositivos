@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="267.0" prefWidth="476.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="Controlador.Acciones_externasController">
+   <children>
+      <ImageView fitHeight="267.0" fitWidth="484.0">
+         <image>
+            <Image url="@../imagenes/aqua.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="20.0" layoutY="20.0" text="Acciones Externas a Dispositivos" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnllamada" layoutX="170.0" layoutY="99.0" mnemonicParsing="false" onAction="#llamada" style="-fx-background-radius: 20;" text="Llamada telefónica" />
+      <Button fx:id="btnmensaje" layoutX="198.0" layoutY="134.0" mnemonicParsing="false" onAction="#mensaje" style="-fx-background-radius: 20;" text="Mensaje" />
+      <Button fx:id="btnnotificacion" layoutX="188.0" layoutY="172.0" mnemonicParsing="false" onAction="#notificacion" style="-fx-background-radius: 20;" text="Notificación" />
+      <Button fx:id="btncarga" layoutX="309.0" layoutY="197.0" mnemonicParsing="false" onAction="#carga" prefHeight="42.0" prefWidth="99.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Carga masiva" textFill="WHITE" />
+      <Label layoutX="85.0" layoutY="67.0" text="Click sobre la acción que desea realizar con este dispositivo" />
+      <AnchorPane layoutX="20.0" layoutY="52.0" prefHeight="4.0" prefWidth="430.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>

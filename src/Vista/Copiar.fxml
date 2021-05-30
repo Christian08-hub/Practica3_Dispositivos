@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="247.0" prefWidth="479.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.CopiarController">
+   <children>
+      <ImageView fitHeight="247.0" fitWidth="479.0">
+         <image>
+            <Image url="@../imagenes/aqua.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="32.0" layoutY="30.0" text="Copiar Texto" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="85.0" text="Texto" />
+      <Button fx:id="btncopiar" layoutX="146.0" layoutY="189.0" mnemonicParsing="false" onAction="#copiar" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Copiar" textFill="WHITE" />
+      <Button fx:id="btncancelar" layoutX="254.0" layoutY="189.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Cancelar" textFill="WHITE" />
+      <TextField fx:id="btntexto" alignment="TOP_LEFT" layoutX="60.0" layoutY="85.0" onAction="#texto" prefHeight="86.0" prefWidth="389.0" promptText="Copiar el texto" />
+      <AnchorPane layoutX="32.0" layoutY="63.0" prefHeight="4.0" prefWidth="428.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>

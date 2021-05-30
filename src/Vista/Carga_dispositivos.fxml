@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="255.0" prefWidth="447.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="Controlador.Carga_dispositivosController">
+   <children>
+      <ImageView fitHeight="255.0" fitWidth="455.0">
+         <image>
+            <Image url="@../imagenes/aqua.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="92.0" layoutY="28.0" prefHeight="200.0" prefWidth="272.0">
+         <children>
+            <Button fx:id="btnbuscar" layoutX="70.0" layoutY="155.0" mnemonicParsing="false" onAction="#buscar" prefHeight="45.0" prefWidth="116.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Buscar" textFill="WHITE" />
+            <ImageView fitHeight="45.0" fitWidth="51.0" layoutX="103.0" layoutY="62.0">
+               <image>
+                  <Image url="@../imagenes/buis.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="-73.0" layoutY="-12.0" prefHeight="26.0" prefWidth="322.0" text="Carga masiva de dispositivos" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="120.0" text="Elija el archivo CSV que desea cargar">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="-73.0" layoutY="22.0" prefHeight="5.0" prefWidth="413.0" style="-fx-background-color: black;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

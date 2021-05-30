@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="428.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="Controlador.MenuController">
+   <children>
+      <ImageView fitHeight="417.0" fitWidth="531.0" layoutX="-17.0" layoutY="14.0">
+         <image>
+            <Image url="@../imagenes/aqua.png" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="-4.0" prefHeight="32.0" prefWidth="518.0" style="-fx-background-color: white;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Dispositivos">
+            <items>
+              <MenuItem fx:id="btngestionar" mnemonicParsing="false" onAction="#gestionar" text="Gestionar Dispositivos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Acciones">
+            <items>
+              <MenuItem fx:id="btnaccionpri" mnemonicParsing="false" onAction="#accionpri" text="Acciones con Dispositivos" />
+                  <MenuItem fx:id="btnaccionse" mnemonicParsing="false" onAction="#accionse" text="Acciones Externas al Dispositivo" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem fx:id="btnbitacora" mnemonicParsing="false" onAction="#bitacora" text="Bitácora" />
+                  <MenuItem fx:id="btnasociados" mnemonicParsing="false" onAction="#asociados" text="Dispositivos asociados a cada usuario" />
+                  <MenuItem fx:id="btnbitaingreso" mnemonicParsing="false" onAction="#btningreso" text="Bitácora de ingreso al programa" />
+                  <MenuItem fx:id="btningreso" mnemonicParsing="false" onAction="#ingreso" text="Reporte de archivos almacenados en dispositivos" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Usuarios">
+               <items>
+                  <MenuItem fx:id="btngestion" mnemonicParsing="false" onAction="#gestion" text="Gestionar usuarios" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane layoutX="63.0" layoutY="55.0" prefHeight="347.0" prefWidth="448.0">
+         <children>
+            <ImageView fitHeight="339.0" fitWidth="381.0" layoutY="-26.0">
+               <image>
+                  <Image url="@../imagenes/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="52.0" layoutY="297.0" text="Conexión entre Dispositivos" textFill="#fcfcfc">
+               <font>
+                  <Font name="Tahoma" size="25.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="52.0" layoutY="333.0" prefHeight="8.0" prefWidth="304.0" style="-fx-background-color: black; -fx-background-radius: 20;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

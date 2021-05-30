@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="367.0" prefWidth="525.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="Controlador.NotiController">
+   <children>
+      <ImageView fitHeight="367.0" fitWidth="527.0">
+         <image>
+            <Image url="@../imagenes/aqua.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="22.0" layoutY="26.0" text="Notificación" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="82.0" text="Tipo de Notificación" />
+      <Label layoutX="59.0" layoutY="136.0" text="Nombre del dispositivo" />
+      <Label layoutX="147.0" layoutY="175.0" text="Asunto" />
+      <TextField fx:id="btnnombre" layoutX="198.0" layoutY="132.0" onAction="#nombre" prefHeight="25.0" prefWidth="253.0" />
+      <TextField fx:id="btnasunto" layoutX="198.0" layoutY="171.0" onAction="#asunto" prefHeight="25.0" prefWidth="253.0" />
+      <TextField fx:id="btnmensaje" alignment="TOP_LEFT" layoutX="198.0" layoutY="213.0" onAction="#mensaje" prefHeight="101.0" prefWidth="253.0" />
+      <Button fx:id="btnenviar" layoutX="155.0" layoutY="324.0" mnemonicParsing="false" onAction="#enviar" prefHeight="34.0" prefWidth="92.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Enviar" textFill="WHITE" />
+      <Button fx:id="btncancelar" layoutX="264.0" layoutY="324.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="34.0" prefWidth="92.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Cancelar" textFill="WHITE" />
+      <MenuButton fx:id="btncorreo" layoutX="198.0" layoutY="78.0" mnemonicParsing="false" onAction="#correo" prefHeight="25.0" prefWidth="253.0" text="Correoo electrónico">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Evento de calendario" />
+        </items>
+      </MenuButton>
+      <Label layoutX="138.0" layoutY="221.0" text="Mensaje" />
+      <AnchorPane layoutX="21.0" layoutY="60.0" prefHeight="5.0" prefWidth="454.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>

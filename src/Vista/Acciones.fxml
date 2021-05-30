@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="406.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.AccionesController">
+   <children>
+      <ImageView fitHeight="406.0" fitWidth="537.0">
+         <image>
+            <Image url="@../imagenes/aqua.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnfotografia" layoutX="63.0" layoutY="121.0" mnemonicParsing="false" onAction="#fotografia" prefHeight="25.0" prefWidth="142.0" style="-fx-background-radius: 20;" text="Tomar fotografía" />
+      <Button fx:id="btncopiar" layoutX="63.0" layoutY="158.0" mnemonicParsing="false" onAction="#copiar" prefHeight="25.0" prefWidth="142.0" style="-fx-background-radius: 20;" text="Copiar texto" />
+      <Button fx:id="btnpegar" layoutX="63.0" layoutY="198.0" mnemonicParsing="false" onAction="#pegar" prefHeight="25.0" prefWidth="142.0" style="-fx-background-radius: 20;" text="Pegar texto" />
+      <Button fx:id="btncompartir" layoutX="64.0" layoutY="236.0" mnemonicParsing="false" onAction="#compartir" prefHeight="25.0" prefWidth="142.0" style="-fx-background-radius: 20;" text="Compartir documentos" />
+      <Button fx:id="btnmusica" layoutX="63.0" layoutY="274.0" mnemonicParsing="false" onAction="#musica" prefHeight="25.0" prefWidth="142.0" style="-fx-background-radius: 20;" text="Reproducir música" />
+      <Button fx:id="btndocumentos" layoutX="64.0" layoutY="314.0" mnemonicParsing="false" onAction="#documentos" prefHeight="25.0" prefWidth="142.0" style="-fx-background-radius: 20;" text="Recibir documentos" />
+      <Button fx:id="btnllamada" layoutX="321.0" layoutY="121.0" mnemonicParsing="false" onAction="#llamada" prefHeight="25.0" prefWidth="142.0" style="-fx-background-radius: 20;" text="Recibir llamada" />
+      <Button fx:id="btnmensajes" layoutX="321.0" layoutY="158.0" mnemonicParsing="false" onAction="#mensajes" prefHeight="25.0" prefWidth="142.0" style="-fx-background-radius: 20;" text="Ver mensajes" />
+      <Button fx:id="btnnotificaciones" layoutX="320.0" layoutY="198.0" mnemonicParsing="false" onAction="#notificaciones" prefHeight="25.0" prefWidth="142.0" style="-fx-background-radius: 20;" text="Ver notificaciones" />
+      <Button fx:id="btncerrar" layoutX="230.0" layoutY="349.0" mnemonicParsing="false" onAction="#btncerrar" prefHeight="42.0" prefWidth="67.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Cerrar" textFill="WHITE" />
+      <Button fx:id="btncarga" layoutX="343.0" layoutY="353.0" mnemonicParsing="false" onAction="#carga" prefHeight="34.0" prefWidth="119.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Carga masiva" textFill="WHITE" />
+      <Label layoutX="88.0" layoutY="63.0" text="Tipo:" />
+      <Label layoutX="333.0" layoutY="63.0" text="Nombre:" />
+      <Label layoutX="37.0" layoutY="28.0" text="Acciones" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="106.0" layoutY="157.0" prefHeight="0.0" prefWidth="388.0" />
+      <AnchorPane layoutX="35.0" layoutY="86.0" prefHeight="4.0" prefWidth="456.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>

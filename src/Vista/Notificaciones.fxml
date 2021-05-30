@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="388.0" prefWidth="576.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="Controlador.NotificacionesController">
+   <children>
+      <ImageView fitHeight="388.0" fitWidth="576.0">
+         <image>
+            <Image url="@../imagenes/aqua.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="30.0" layoutY="25.0" text="Notificaciones" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="21.0" />
+         </font>
+      </Label>
+      <TableView layoutX="30.0" layoutY="70.0" prefHeight="300.0" prefWidth="520.0">
+        <columns>
+          <TableColumn prefWidth="252.0" text="Tipo de Notificación" />
+          <TableColumn minWidth="0.0" prefWidth="267.0" text="Descripción de la Notificación" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="30.0" layoutY="57.0" prefHeight="5.0" prefWidth="520.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>

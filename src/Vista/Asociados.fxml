@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="687.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="Controlador.AsociadosController">
+   <children>
+      <ImageView fitHeight="448.0" fitWidth="687.0">
+         <image>
+            <Image url="@../imagenes/aqua.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="21.0" layoutY="20.0" text="Dispositivo asociado a cada usuario" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="93.0" text="Seleccione usuario" />
+      <Label layoutX="31.0" layoutY="132.0" text="Fecha de generaciión:" />
+      <Label layoutX="389.0" layoutY="132.0" text="Hora de generación:" />
+      <TableView layoutX="30.0" layoutY="155.0" prefHeight="273.0" prefWidth="621.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="No. de línea" />
+          <TableColumn prefWidth="123.0" text="Correo electrónico" />
+            <TableColumn prefWidth="135.0" text="Tipo de dispositivo" />
+            <TableColumn prefWidth="153.0" text="Nombre de Dispositivo" />
+            <TableColumn prefWidth="134.0" text="Estado de Dispositivo" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnexportar" layoutX="535.0" layoutY="40.0" mnemonicParsing="false" onAction="#exportar" prefHeight="37.0" prefWidth="112.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Exportar reporte" textFill="WHITE" />
+      <MenuButton layoutX="146.0" layoutY="89.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="506.0" style="-fx-background-radius: 20;" text="Seleccione correo electrónico">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Seleccione correo electrónico" />
+        </items>
+      </MenuButton>
+      <AnchorPane layoutX="21.0" layoutY="55.0" prefHeight="5.0" prefWidth="385.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>
